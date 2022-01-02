@@ -72,7 +72,7 @@ ul {
     background-color: transparent;
     border: 2px solid var(--primary-clr);
     border-radius: 0.5rem;
-    box-shadow: .3rem .3rem 0 rgba(0, 0, 0, .2);
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
     text-transform: capitalize;
     color: var(--primary-clr);
     cursor: pointer;
@@ -96,3 +96,103 @@ ul {
     margin-left: .5rem;
 }
 /* end basic rules */
+/* start header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 0;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-size: 1.5rem;
+    color: var(--heading-clr);
+}
+.brand i {
+    color: var(--primary-clr);
+}
+nav input#nav-input {
+    display: none;
+}
+.nav-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.4rem;
+    background-color: #eee;
+    cursor: pointer;
+    display: none;
+}
+.nav-btn::after {
+    content: "\f0c9";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--primary-clr);
+}
+@media screen and (max-width: 992px) {
+    .nav-btn {
+        display: flex;
+    }
+}
+nav input#nav-input:checked ~ .nav-btn::after {
+    content: "\f00d";
+}
+.nav-links {
+    display: flex;
+}
+@media screen and (max-width: 992px) {
+    .nav-links {
+        position: absolute;
+        top: calc(100% + 1rem);
+        right: 1rem;
+        width: 16rem;
+        padding: 1.25rem;
+        flex-direction: column;
+        background-color: var(--white-clr);
+        border: 2px solid var(--primary-clr);
+        border-radius: 0.4rem;
+        box-shadow: 0.3rem 0.3rem 0 rgb(22 160 133 / 20%);
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    nav input#nav-input:checked ~ .nav-links {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.nav-links li:not(:last-child) {
+    margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+    .nav-links li:not(:last-child) {
+        margin-right: 0;
+    }
+}
+.nav-links li a {
+    display: block;
+    font-size: 17px;
+    color: var(--text-clr);
+    transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+    .nav-links li:not(:last-child) a {
+        padding-bottom: 1rem;
+    }
+}
+.nav-links li a:hover {
+    color: var(--primary-clr);
+}
+/* end header */
