@@ -206,7 +206,7 @@ nav input#nav-input:checked ~ .nav-btn::after {
 /* start home */
 .home {
     margin-top: 75px;
-    padding: 100px 0;
+    padding: 5rem 0;
     background-color: var(--sec-bg-clr);
 }
 .home-row {
@@ -246,3 +246,29 @@ nav input#nav-input:checked ~ .nav-btn::after {
     margin-bottom: .5rem;
 }
 /* end home */
+/* start statistics */
+.statistics {
+    padding: 5rem 0;
+}
+.statistics .statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 30px;
+}
+.statistic {
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    text-align: center;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+}
+.statistic i {
+    font-size: 3rem;
+    color: var(--primary-clr);
+    margin-bottom: 0.75rem;
+}
+.statistic h3 {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+}
+/* end statistics */
