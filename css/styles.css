@@ -396,3 +396,68 @@ nav input#nav-input:checked ~ .nav-btn::after {
     color: var(--white-clr);
 }
 /* end our doctors */
+/* start book section */
+.book {
+    padding: 5rem 0;
+}
+.book-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+@media screen and (min-width: 992px) {
+    .book-row {
+        flex-direction: row;
+    }
+}
+.book-img, 
+.book-form {
+    flex: 0 0 50%;
+}
+@media screen and (min-width: 992px) {
+    .book-img, 
+    .book-form {
+        max-width: 50%;
+    }
+}
+.book-form {
+    width: 100%;
+    padding: 15px 15px;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+    text-align: center;
+} 
+@media screen and (min-width: 768px) {
+    .book-form {
+        padding: 1.5rem 2rem;
+    }
+}
+.book-form h3 {
+    font-size: 1.5rem;
+    color: var(--heading-clr);
+    margin-bottom: 1.5rem;
+}
+.book-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.book-form input[type='submit'] {
+    margin-bottom: 0 !important;
+    color: var(--primary-clr);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.book-form input[type='submit']:hover {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+}
+/* end book section */
