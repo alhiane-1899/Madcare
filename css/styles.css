@@ -525,3 +525,60 @@ nav input#nav-input:checked ~ .nav-btn::after {
     margin-top: 2rem;
 }
 /* end clients review */
+/* start our blogs */
+.our-blogs {
+    padding: 5rem 0;
+}
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 30px;
+}
+.blog {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+}
+.blog .img {
+    display: flex;
+    height: 11rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.blog-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    transition: all .3s ease-in-out;
+}
+.blog:hover .blog-img {
+    transform: scale(1.2);
+}
+.blog-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+.blog-row a {
+    font-size: .85rem;
+    color: var(--text-clr);
+    transition: all .3s ease-in-out;
+}
+.blog-row a:hover {
+    color: var(--primary-clr);
+}
+.blog-row a i {
+    margin-right: .25rem;
+    color: var(--primary-clr);
+}
+.blog-title {
+    font-size: 1.5rem;
+    color: var(--heading-clr);
+    margin-bottom: .5rem;
+}
+/* end our blogs */
