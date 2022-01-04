@@ -340,3 +340,59 @@ nav input#nav-input:checked ~ .nav-btn::after {
     margin-bottom: .5rem;
 }
 /* end about us */
+/* start our doctors */
+.our-doctors {
+    padding: 5rem 0;
+    background-color: var(--sec-bg-clr);
+}
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.doctor {
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+    text-align: center;
+}
+.doctor-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+.doctor-name {
+    font-size: 1.5rem;
+    color: var(--heading-clr);
+}
+.doctor-review {
+    display: block;
+    color: var(--primary-clr);
+    margin-bottom: 1rem;
+}
+.social-media li {
+    display: inline-block;
+    margin: 0 .15rem;
+}
+.social-media li a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    color: var(--primary-clr);
+    transition: all .3s ease-in-out;
+}
+.social-media li a:hover {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+}
+/* end our doctors */
