@@ -304,3 +304,39 @@ nav input#nav-input:checked ~ .nav-btn::after {
     margin-bottom: .5rem;
 }
 /* end our services */
+/* start about us */
+.about-us {
+    padding: 5rem 0;
+}
+.about-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+@media screen and (min-width: 992px) {
+    .about-row {
+        flex-direction: row;
+    }
+}
+.about-img, 
+.about-text {
+    flex: 0 0 50%;
+}
+@media screen and (min-width: 992px) {
+    .about-img, 
+    .about-text {
+        max-width: 50%;
+    }
+}
+.about-text h3 {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.about-text p {
+    margin-bottom: .5rem;
+}
+/* end about us */
