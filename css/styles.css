@@ -461,3 +461,67 @@ nav input#nav-input:checked ~ .nav-btn::after {
     color: var(--white-clr);
 }
 /* end book section */
+/* start clients review */
+.clients-review {
+    padding: 5rem 0;
+    background-color: var(--sec-bg-clr);
+}
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 30px;
+}
+.client-review {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--primary-clr);
+    border-radius: .25rem;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+    text-align: center;
+}
+.client-review::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 120%;
+    height: 12rem;
+    background-color: var(--primary-clr);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.client-img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+    border: 2px solid var(--white-clr);
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+.client-name {
+    position: relative;
+    z-index: 2;
+    font-size: 1.25rem;
+    color: var(--white-clr);
+}
+.stars {
+    position: relative;
+    z-index: 2;
+}
+.stars li {
+    display: inline-block;
+}
+.stars li i {
+    font-size: .85rem;
+    color: var(--white-clr);
+}
+.review {
+    margin-top: 2rem;
+}
+/* end clients review */
